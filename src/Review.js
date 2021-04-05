@@ -6,13 +6,12 @@ import {GiPerspectiveDiceSixFacesRandom} from 'react-icons/gi';
 const Review = () => {
 
   const [index, setIndex] = useState(0);
-  const {id, image, job, name, text} = people[index];
+  const {image, job, name, text} = people[index];
 
   const checkNumber = num =>{
-    if(num > people.length -1)
-      return 0;
-    if(num < 0)
-      return people.length -1;
+    if(num > people.length -1) return 0;
+    if(num < 0) return people.length -1;
+
     return num;
   }
 
